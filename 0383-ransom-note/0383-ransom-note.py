@@ -1,8 +1,10 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        res=list(set(ransomNote))
-        
-        for i in res:
-            if i not in magazine or ransomNote.count(i) > magazine.count(i):
+        ransomNote=list(ransomNote)
+        magazine=list(magazine)
+        for i in ransomNote:
+            if i in magazine:
+                magazine.remove(i)
+            else:
                 return False
         return True
