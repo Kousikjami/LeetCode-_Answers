@@ -4,4 +4,4 @@ class Solution:
         for i in s:
             if i==letter:
                 count+=1
-        return int((count/len(s))*100)
+        return (count*100)//len(s)
