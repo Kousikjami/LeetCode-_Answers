@@ -1,13 +1,15 @@
 #User function Template for python3
-
+def final(i,N):
+    if i>N:
+        return
+    print(i,end=" ")
+    final(i+1,N)
 class Solution:    
     #Complete this function
     def printNos(self,N):
         #Your code here
-        if N==0:
-            return
-        self.printNos(N-1)
-        print(N,end=" ")
+        final(1,N)
+
 
 #{ 
  # Driver Code Starts
