@@ -3,4 +3,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        nums=nums.sort()
+        res=[0,0,0]
+        for i in nums:
+            res[i]+=1
+        print(res)
+        k=0
+        for i in range(len(res)):
+            for j in range(res[i]):
+                nums[k]=i
+                k+=1
+    
