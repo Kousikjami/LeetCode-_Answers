@@ -4,7 +4,7 @@ class Solution:
             if num == 0: 
                 return 0
             else:
-                return str(decimalToBinary(num//base,base)) + str((num%base))
+                return str((num%base)) + str(decimalToBinary(num//base,base)) 
         count=0
         for i in range(2,n-1):
             x=str(int(decimalToBinary(n,i)))
