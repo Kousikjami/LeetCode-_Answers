@@ -4,6 +4,8 @@ class Solution:
         for i in range(n):
             s=start+2*i
             res.append(s)
-        res1 = reduce(lambda x, y: x ^ y, res)
-        return res1
+        x=0
+        for i in range(len(res)):
+            x=x^res[i]
+        return x
         
