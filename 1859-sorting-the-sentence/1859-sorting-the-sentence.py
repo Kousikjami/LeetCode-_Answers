@@ -6,7 +6,5 @@ class Solution:
         k=len(s)
         x=[0]*k
         for word in s:
-            for i in word:
-                if i.isdigit():
-                    x[int(i)-1]=word[:-1]
+            x[int(word[-1])-1]=word[:-1]
         return ' '.join(x)
