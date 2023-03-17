@@ -1,5 +1,7 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        nums[:]=sorted(list(set(nums)))
+        res=list(set(nums))
+        nums[:]=res
+        nums.sort()
         return len(nums)
     
