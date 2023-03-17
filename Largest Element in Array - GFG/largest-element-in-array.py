@@ -1,8 +1,11 @@
 #User function Template for python3
 
 def largest( arr, n):
-    return max(arr)
-
+    maxi=arr[0]
+    for i in arr:
+        if i>maxi:
+            maxi=i
+    return maxi
 
 #{ 
  # Driver Code Starts
