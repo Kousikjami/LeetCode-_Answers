@@ -8,3 +8,4 @@ class Solution:
                 A.remove(i)
                 A.append(0)
         return A
+        
