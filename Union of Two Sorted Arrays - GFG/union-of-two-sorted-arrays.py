@@ -12,8 +12,7 @@ class Solution:
         :return:  The union of both arrays as a list
         '''
         # code here 
-        res=sorted(list(set(a+b)))
-        return res
+        return sorted(list(set(a+b)))
 
 #{ 
  # Driver Code Starts
