@@ -12,8 +12,7 @@ class Solution:
         :return:  The union of both arrays as a list
         '''
         # code here 
-        res=a+b
-        res=sorted(list(set(res)))
+        res=sorted(list(set(a+b)))
         return res
 
 #{ 
